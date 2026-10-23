@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.venv-*/
+.pytest_cache/
+
+# Data (COCO is downloaded and prepared locally)
+datasets/
+data/coco300/images/
+
+# Generated outputs
+reports/
+results/**/predictions.json
+results/**/plan_0_3_results.md
+export/artifacts/
+export/coco_train2017_calibration.yaml
+**/*_saved_model/
+*.onnx
+*.pt
+
+# Local installation/download bundles and app import archives
+offline_wheels/
+Traffic_Safety_Monitoring_AppLab*.zip
+
+# Board logs and local deployment verification outputs
+*.log
+deployment.sha256
+deployment_verify.log
+
+# Live app sessions and per-board model selection
+arduino_app/**/data/runs/
+arduino_app/**/data/model_selection.json
+*.tmp
+
+# Local credentials (keep example configuration files if deliberately provided)
+.env
+.env.*
+!.env.example
+client.ini

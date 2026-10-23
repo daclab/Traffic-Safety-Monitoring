@@ -1,0 +1,237 @@
+{
+  "label": "base_320_w8a8_1core_seq",
+  "runner": "pipeline_v2",
+  "images": 300,
+  "model": "/home/arduino/unoq-yolo11n-ladder/models/yolo11n_silu_320_w8a8_int8io.tflite",
+  "model_io": {
+    "input_size": 320,
+    "candidates": 2100,
+    "input_dtype": "int8",
+    "input_quantization": [
+      0.003921568859368563,
+      -128.0
+    ],
+    "output_dtype": "int8",
+    "output_quantization": [
+      0.005506535992026329,
+      -116.0
+    ],
+    "int8_input_xor_fast_path": true
+  },
+  "backend": "pil",
+  "gpu_device": null,
+  "nms": "legacy",
+  "mode": "eval",
+  "confidence": 0.001,
+  "threads": 1,
+  "queue_depth": 2,
+  "async_postprocess": false,
+  "infer_cpus": [
+    0
+  ],
+  "aux_cpus": null,
+  "aux_nice": 0,
+  "cv_threads": 1,
+  "warmup": 3,
+  "model_size_mb": 2.8098859786987305,
+  "memory_mb": {
+    "rss_before_model": 28.38671875,
+    "rss_after_model_load": 50.68359375,
+    "rss_end": 70.015625,
+    "peak_rss": 70.015625
+  },
+  "sequential": true,
+  "prefetch": "n/a",
+  "jit_margin_ms": null,
+  "live": null,
+  "wall_seconds": 59.449027786,
+  "throughput_fps": 5.046339884310921,
+  "amortized_ms_per_image": 198.16342595333333,
+  "completion_interval_ms": {
+    "mean": 197.55933769899667,
+    "median": 192.24753,
+    "p95": 230.2110641,
+    "max": 288.195668
+  },
+  "response_ms": {
+    "mean": 198.05222927,
+    "median": 192.16112299999998,
+    "p95": 230.49697135000002,
+    "max": 378.495396
+  },
+  "queue_wait_ms": {
+    "mean": 0.14758365333333331,
+    "median": 0.1366155,
+    "p95": 0.21689945000000002,
+    "max": 0.384742
+  },
+  "preprocess_wall_ms": {
+    "mean": 19.90411116,
+    "median": 19.422613,
+    "p95": 26.021767150000002,
+    "max": 135.086387
+  },
+  "preprocess_cpu_ms": {
+    "mean": 19.288440536666666,
+    "median": 18.947708499999997,
+    "p95": 24.45988085,
+    "max": 131.535104
+  },
+  "inference_wall_ms": {
+    "mean": 159.47649229333334,
+    "median": 158.249512,
+    "p95": 166.0823674,
+    "max": 177.325535
+  },
+  "inference_main_thread_cpu_ms": {
+    "mean": 156.23129551,
+    "median": 155.851484,
+    "p95": 158.1619095,
+    "max": 159.386458
+  },
+  "postprocess_wall_ms": {
+    "mean": 18.477544369999997,
+    "median": 11.840027,
+    "p95": 50.28385535000001,
+    "max": 94.831988
+  },
+  "postprocess_cpu_ms": {
+    "mean": 18.044807473333332,
+    "median": 11.685598500000001,
+    "p95": 47.547498700000006,
+    "max": 93.276663
+  },
+  "nms_wall_ms": {
+    "mean": 17.38306656666667,
+    "median": 10.824658,
+    "p95": 49.06686035000001,
+    "max": 93.359273
+  },
+  "candidates_after_threshold": {
+    "mean": 217.78666666666666,
+    "median": 162.0,
+    "p95": 547.3500000000001,
+    "max": 921.0
+  },
+  "process_cpu_ms_per_frame": 195.28818016666668,
+  "process_cpu_cores_busy": 0.9854905325095471,
+  "threads_cpu": {
+    "main": {
+      "threads": 1,
+      "cpu_ms": 58160.0,
+      "cpus_allowed": [
+        "0"
+      ],
+      "cpu_ms_per_frame": 193.86666666666667
+    },
+    "other:python": {
+      "threads": 3,
+      "cpu_ms": 0.0,
+      "cpus_allowed": [
+        "0-3"
+      ],
+      "cpu_ms_per_frame": 0.0
+    },
+    "monitor": {
+      "threads": 1,
+      "cpu_ms": 420.0,
+      "cpus_allowed": [
+        "0"
+      ],
+      "cpu_ms_per_frame": 1.4
+    }
+  },
+  "core_busy_percent": {
+    "cpu0": 99.98317914213625,
+    "cpu1": 5.264934188322646,
+    "cpu2": 5.891289669142472,
+    "cpu3": 5.470200911700152
+  },
+  "cpufreq_policy": {
+    "governor": "schedutil",
+    "min_mhz": 300.0,
+    "max_mhz": 2016.0,
+    "hw_max_mhz": 2016.0
+  },
+  "monitor": {
+    "samples": 58,
+    "cpu_mhz": {
+      "cpu0": {
+        "min": 2016.0,
+        "mean": 2016.0,
+        "max": 2016.0
+      },
+      "cpu1": {
+        "min": 2016.0,
+        "mean": 2016.0,
+        "max": 2016.0
+      },
+      "cpu2": {
+        "min": 2016.0,
+        "mean": 2016.0,
+        "max": 2016.0
+      },
+      "cpu3": {
+        "min": 2016.0,
+        "mean": 2016.0,
+        "max": 2016.0
+      }
+    },
+    "temperature_c": {
+      "thermal_zone0:mapss-thermal": {
+        "min": 44.2,
+        "mean": 45.16724137931034,
+        "max": 46.0
+      },
+      "thermal_zone1:video-thermal": {
+        "min": 42.9,
+        "mean": 43.641379310344824,
+        "max": 43.9
+      },
+      "thermal_zone2:wlan-thermal": {
+        "min": 42.3,
+        "mean": 43.008620689655174,
+        "max": 43.5
+      },
+      "thermal_zone3:cpuss0-thermal": {
+        "min": 45.1,
+        "mean": 46.20172413793103,
+        "max": 49.2
+      },
+      "thermal_zone4:cpuss1-thermal": {
+        "min": 45.4,
+        "mean": 46.41379310344828,
+        "max": 48.6
+      },
+      "thermal_zone5:mdm0-thermal": {
+        "min": 42.3,
+        "mean": 43.08620689655172,
+        "max": 43.5
+      },
+      "thermal_zone6:mdm1-thermal": {
+        "min": 42.6,
+        "mean": 43.43793103448276,
+        "max": 43.9
+      },
+      "thermal_zone7:gpu-thermal": {
+        "min": 42.0,
+        "mean": 42.97241379310345,
+        "max": 43.5
+      },
+      "thermal_zone8:hm-center-thermal": {
+        "min": 44.5,
+        "mean": 45.36896551724138,
+        "max": 45.7
+      },
+      "thermal_zone9:camera-thermal": {
+        "min": 42.3,
+        "mean": 43.04482758620689,
+        "max": 43.5
+      }
+    }
+  },
+  "platform": "Linux-6.16.7-g0dd6551ae96b-aarch64-with-glibc2.41",
+  "python": "3.13.5",
+  "opencv": null,
+  "predictions": 24967
+}

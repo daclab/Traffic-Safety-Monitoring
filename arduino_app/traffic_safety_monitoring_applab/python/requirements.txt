@@ -1,0 +1,5 @@
+ai-edge-litert==2.2.0
+numpy==2.5.3
+opencv-python-headless==5.0.0.93
+msgpack>=1.0,<2
+Pillow==12.3.0

@@ -1,0 +1,5 @@
+name: Traffic Safety Monitoring
+description: Live camera safety-zone monitoring for the SEC 2026 Student Innovation Challenge.
+icon: 🚦
+ports: [8081]
+bricks: []

@@ -1,0 +1,55 @@
+{
+  "description": "Published ladder values (board runs of 2026-10-08) for runs that were later repeated with memory logging (2026-10-09). The report shows these values and takes peak memory and model size from the repeat run. mAP and predictions of the repeat were identical. Keys are dotted paths into summary.json.",
+  "memory_note": "Peak memory for all five ladder steps was measured in repeat runs with identical configurations on 2026-10-09.",
+  "runs": {
+    "base_640_fp32_1core_seq": {
+      "throughput_fps": 0.9194,
+      "response_ms.mean": 1087.7,
+      "inference_wall_ms.mean": 1031.9,
+      "preprocess_wall_ms.mean": 18.4,
+      "postprocess_wall_ms.mean": 37.2,
+      "core_busy_percent": {
+        "cpu0": 100,
+        "cpu1": 0,
+        "cpu2": 0,
+        "cpu3": 0
+      },
+      "monitor.temperature_c": {
+        "peak": {
+          "min": 45.1,
+          "mean": 45.1,
+          "max": 45.1
+        }
+      }
+    },
+    "base_320_w8a8_pipeline": {
+      "throughput_fps": 18.9,
+      "inference_wall_ms.mean": 52.7,
+      "preprocess_cpu_ms.mean": 9.2
+    },
+    "base_320_fp32_1core_seq": {
+      "throughput_fps": 3.588179133177535,
+      "response_ms.mean": 278.58830685666663,
+      "inference_wall_ms.mean": 237.23968727,
+      "preprocess_wall_ms.mean": 19.484634366666665,
+      "postprocess_wall_ms.mean": 21.654269953333337,
+      "queue_wait_ms.mean": 0.1322265566666667
+    },
+    "base_320_w8a8_1core_seq": {
+      "throughput_fps": 5.150576235232357,
+      "response_ms.mean": 194.05617143,
+      "inference_wall_ms.mean": 156.57884091999998,
+      "preprocess_wall_ms.mean": 19.497538903333336,
+      "postprocess_wall_ms.mean": 17.82763154333333,
+      "queue_wait_ms.mean": 0.11938593666666666
+    },
+    "base_320_w8a8_4t_seq": {
+      "throughput_fps": 11.204286297065781,
+      "response_ms.mean": 89.14504308000001,
+      "inference_wall_ms.mean": 51.13570568,
+      "preprocess_wall_ms.mean": 19.63044203,
+      "postprocess_wall_ms.mean": 18.218324486666667,
+      "queue_wait_ms.mean": 0.12601905333333335
+    }
+  }
+}

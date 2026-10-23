@@ -1,0 +1,7 @@
+# Board (Arduino UNO Q, Debian 13, Python 3.13) versions used for the ladder
+ai-edge-litert==2.2.0
+numpy==2.5.3
+opencv-python-headless==5.0.0.93
+pillow==12.3.0
+msgpack>=1.0,<2   # monitoring app (LED RPC) when run from the command line
+# pycocotools is installed by run_ladder.sh from kit_wheels/ when missing
